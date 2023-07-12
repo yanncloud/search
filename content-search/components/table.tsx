@@ -22,42 +22,37 @@ function JsonDataDisplayTeam(): ReactElement {
   const [search, setSearch] = useState("");
   console.log(search);
 
+  const [datatype, setDataType] = useState<any>([]);
+
   const DisplayData = JsonData.content
     .filter((data) => {
       return search.toLowerCase() === ""
         ? data
         : data.name.includes(search) ||
-        data.tag.includes(search) ||
-        data.tag.includes(search)
-
+            data.tag.includes(search) ||
+            data.type.includes(search) ||
+            data.date.includes(search);
     })
     .map(({ id, name, date, link, tag, type, bett }) => {
       return (
         <tr className="border-b dark:border-neutral-500" key={id} id={name}>
           <td className="whitespace-nowrap px-6 py-4 text-lg">
-   
-
-                  <iframe src={bett} width="440" height="280" allow="autoplay"></iframe>
-
-          
+            <iframe
+              src={bett}
+              width="440"
+              height="280"
+              allow="autoplay"
+            ></iframe>
           </td>
           <td className="whitespace-nowrap px-6 py-4 text-lg">
-            <a
-              href={link}
-              className="no-underline hover:underline ..."
-            >
+            <a href={link} className="no-underline hover:underline ...">
               {name}
             </a>
           </td>
 
           <td className="whitespace-nowrap px-6 py-4 text-lg">
-            <a
-             
-            >
-              {tag}
-            </a>
+            <a>{tag}</a>
           </td>
-
         </tr>
       );
     });
@@ -101,8 +96,76 @@ function JsonDataDisplayTeam(): ReactElement {
                   placeholder="Suche nach Fotos, Videos oder Vektorgrafiken"
                   required
                 />
-
               </div>
+
+              <br />
+              <ul className="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                <li className="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                  <div className="flex items-center pl-3">
+                    <input
+                      id="vue-checkbox-list"
+                      type="checkbox"
+                      value=""
+                      checked=""
+                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    />
+                    <label
+                      htmlFor="vue-checkbox-list"
+                      className="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      Bild
+                    </label>
+                  </div>
+                </li>
+                <li className="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                  <div className="flex items-center pl-3">
+                    <input
+                      id="react-checkbox-list"
+                      type="checkbox"
+                      value=""
+                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    />
+                    <label
+                      htmlFor="react-checkbox-list"
+                      className="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      Vektorgrafik
+                    </label>
+                  </div>
+                </li>
+                <li className="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                  <div className="flex items-center pl-3">
+                    <input
+                      id="angular-checkbox-list"
+                      type="checkbox"
+                      value=""
+                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    />
+                    <label
+                      htmlFor="angular-checkbox-list"
+                      className="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      Video
+                    </label>
+                  </div>
+                </li>
+                <li className="w-full dark:border-gray-600">
+                  <div className="flex items-center pl-3">
+                    <input
+                      id="laravel-checkbox-list"
+                      type="checkbox"
+                      value=""
+                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    />
+                    <label
+                      htmlFor="laravel-checkbox-list"
+                      className="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      Gif
+                    </label>
+                  </div>
+                </li>
+              </ul>
             </form>
             <br />
             <table className="min-w-full text-left text-sm font-light">
@@ -117,7 +180,6 @@ function JsonDataDisplayTeam(): ReactElement {
                   <th scope="col" className="px-6 py-4 text-xl">
                     Tags
                   </th>
-
                 </tr>
               </thead>
               <tbody>{DisplayData}</tbody>

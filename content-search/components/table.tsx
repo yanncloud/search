@@ -26,14 +26,8 @@ function JsonDataDisplayTeam(): ReactElement {
     .filter((data) => {
       return search.toLowerCase() === ""
         ? data
-        : data.name.includes(search) ||
+        : data.name.includes(search)
 
-            data.date.includes(search) ||
-            data.link.includes(search) ||
-            data.tag.includes(search) ||
-            data.type.includes(search) ||
-
-            data.bett.includes(search);
     })
     .map(({ id, name, date, link, tag, type, bett }) => {
       return (

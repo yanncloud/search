@@ -27,6 +27,7 @@ function JsonDataDisplayTeam(): ReactElement {
       return search.toLowerCase() === ""
         ? data
         : data.name.includes(search) ||
+        data.tag.includes(search) ||
         data.tag.includes(search)
 
     })

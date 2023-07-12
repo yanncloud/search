@@ -41,6 +41,7 @@ function JsonDataDisplayTeam(): ReactElement {
               src={bett}
               width="440"
               height="280"
+              loading="lazy"
               allow="autoplay"
             ></iframe>
           </td>

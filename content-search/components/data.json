@@ -724,7 +724,7 @@
         "id": "67",
         "name": "Nutzer*innen Prognose",
         "tag": "Graph",
-        "type": "vector",
+        "type": "graphic",
         "date": "07.12.2018",
         "link": "https://drive.google.com/file/d/1JKZiYIGNfDt2R0HtuzOV2MtroCfiEKwn/view",
         "bett": "https://drive.google.com/file/d/1JKZiYIGNfDt2R0HtuzOV2MtroCfiEKwn/preview"
@@ -735,7 +735,7 @@
         "id": "68",
         "name": "Einnahmen Prognose",
         "tag": "Graph",
-        "type": "vector",
+        "type": "graphic",
         "date": "07.12.2018",
         "link": "https://drive.google.com/file/d/1c0LQvAf7Laq0sFJbcg5qTRNsjOvQG9bp/view",
         "bett": "https://drive.google.com/file/d/1c0LQvAf7Laq0sFJbcg5qTRNsjOvQG9bp/preview"
@@ -746,7 +746,7 @@
         "id": "69",
         "name": "Schüler in LabSchool",
         "tag": "Mathe, Geometrie, Digital",
-        "type": "vector",
+        "type": "picture",
         "date": "004.12.2016",
         "link": "https://drive.google.com/file/d/0B0vgO6Y0XakNc0dvbWlkUURoYTQ/view?resourcekey=0-uxCTQ_E-wKxAfnOnaxHXcw",
         "bett": "https://drive.google.com/file/d/0B0vgO6Y0XakNc0dvbWlkUURoYTQ/preview?resourceKey=0-uxCTQ_E-wKxAfnOnaxHXcw"
@@ -757,7 +757,7 @@
         "id": "70",
         "name": "Betreuung in LabSchool",
         "tag": "Begleitung, Schüler",
-        "type": "vector",
+        "type": "picture",
         "date": "04.12.2016",
         "link": "https://drive.google.com/file/d/0B0vgO6Y0XakNaWxIX1RBOHhCUjg/view?resourcekey=0-oO-xA9CURf93GIST1C-qIg",
         "bett": "https://drive.google.com/file/d/0B0vgO6Y0XakNaWxIX1RBOHhCUjg/preview?resourceKey=0-oO-xA9CURf93GIST1C-qIg"
@@ -768,7 +768,7 @@
         "id": "71",
         "name": "Schüler mit Taschenrechner Labschool",
         "tag": "Geometrie, Mathe, Begleitung, Schüler",
-        "type": "vector",
+        "type": "picture",
         "date": "04.12.2016",
         "link": "https://drive.google.com/file/d/0B4Tgac3naqOoSTU5WE5lZWRralU/view?resourcekey=0-xlOQNya9yUk_z2S4p4G_Aw",
         "bett": "https://drive.google.com/file/d/0B4Tgac3naqOoSTU5WE5lZWRralU/preview?resourceKey=0-xlOQNya9yUk_z2S4p4G_Aw"
@@ -779,7 +779,7 @@
         "id": "72",
         "name": "Klasse in LabSchool",
         "tag": "Mathe, Begleitung, Schüler",
-        "type": "vector",
+        "type": "picture",
         "date": "04.12.2016",
         "link": "https://drive.google.com/file/d/0B4Tgac3naqOoUldwQjVmSDBhLTQ/view?resourcekey=0-lE6hEzugs95bNuodds6A1g",
         "bett": "https://drive.google.com/file/d/0B4Tgac3naqOoUldwQjVmSDBhLTQ/preview?resourceKey=0-lE6hEzugs95bNuodds6A1g"
@@ -790,12 +790,23 @@
         "id": "73",
         "name": "Serlo Standort Münster",
         "tag": "Gespräch, Laptop",
-        "type": "vector",
+        "type": "picture",
         "date": "16.10.2018",
         "link": "https://drive.google.com/file/d/1s0L53NgL93cYfkwFfBlO9JKvFo0VTw_4/view",
         "bett": "https://drive.google.com/file/d/1s0L53NgL93cYfkwFfBlO9JKvFo0VTw_4/preview"
 
       },
+
+      {
+        "id": "74",
+        "name": "Redaktionstage München",
+        "tag": "Claudia, Larissa, Laptop, ästhetisch",
+        "type": "picture",
+        "date": "16.04.2021",
+        "link": "https://drive.google.com/file/d/1pIip-sNqi7X8xJAFCvVmajgk5ZcJANC2/view",
+        "bett": "https://drive.google.com/file/d/1pIip-sNqi7X8xJAFCvVmajgk5ZcJANC2/preview"
+
+      }
 
 
 

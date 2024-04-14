@@ -16,6 +16,7 @@ import {
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Template from "./template";
 
 function JsonDataDisplayTeam(): ReactElement {
   //Map data from json
@@ -33,6 +34,7 @@ function JsonDataDisplayTeam(): ReactElement {
             data.type.includes(search) ||
             data.date.includes(search);
     })
+    .slice(0, 10)
     .map(({ id, name, date, link, tag, type, bett }) => {
       return (
         <tr className="border-b dark:border-neutral-500" key={id} id={name}>
@@ -98,8 +100,6 @@ function JsonDataDisplayTeam(): ReactElement {
                   required
                 />
               </div>
-
-              <br />
             </form>
             <br />
             <table className="min-w-full text-left text-sm font-light">
